@@ -1,193 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For My Amrutha ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #ff5f9e, #ffc3d8);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
+<title>Adhi ❤️ Amrutha</title>
 
-    .container {
-      background: white;
-      padding: 40px;
-      border-radius: 25px;
-      text-align: center;
-      max-width: 420px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-      animation: fadeIn 2s ease;
-      position: relative;
-      z-index: 10;
-    }
+<style>
 
-    h1 {
-      color: #ff3366;
-      margin-bottom: 10px;
-    }
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(to right,#ff758c,#ff7eb3);
+  text-align:center;
+  overflow-x:hidden;
+}
 
-    h2 {
-      color: #ff6699;
-      margin-bottom: 20px;
-    }
+/* Header */
+header{
+  padding:40px 20px;
+  color:white;
+}
 
-    p {
-      color: #555;
-      font-size: 18px;
-      margin-bottom: 25px;
-      line-height: 1.5;
-    }
+header h1{
+  font-size:32px;
+}
 
-    button {
-      background: #ff3366;
-      border: none;
-      color: white;
-      padding: 14px 28px;
-      font-size: 17px;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+header p{
+  font-size:18px;
+}
 
-    button:hover {
-      background: #ff0044;
-      transform: scale(1.05);
-    }
+/* Love Box */
+.love-box{
+  background:white;
+  margin:20px auto;
+  padding:25px;
+  border-radius:20px;
+  max-width:450px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
 
-    .message {
-      margin-top: 25px;
-      font-size: 20px;
-      color: #ff3366;
-      display: none;
-      animation: pop 0.5s ease;
-      font-weight: bold;
-    }
+/* Gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:15px;
+  margin-top:20px;
+}
 
-    /* Floating Hearts */
-    .heart {
-      position: absolute;
-      color: red;
-      font-size: 20px;
-      animation: float 5s linear infinite;
-      opacity: 0.8;
-    }
+.gallery img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:15px;
+  transition:0.3s;
+}
 
-    @keyframes float {
-      0% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-800px);
-        opacity: 0;
-      }
-    }
+.gallery img:hover{
+  transform:scale(1.05);
+}
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+/* Button */
+button{
+  background:#ff3366;
+  border:none;
+  color:white;
+  padding:12px 25px;
+  font-size:16px;
+  border-radius:25px;
+  cursor:pointer;
+  margin-top:15px;
+}
 
-    @keyframes pop {
-      0% {
-        transform: scale(0.5);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
+button:hover{
+  background:#ff0044;
+}
 
-    .footer {
-      margin-top: 25px;
-      color: #888;
-      font-size: 14px;
-    }
-  </style>
+/* Message */
+#message{
+  display:none;
+  font-size:18px;
+  color:#ff3366;
+  margin-top:15px;
+  font-weight:bold;
+}
+
+/* Hearts */
+.heart{
+  position:fixed;
+  bottom:-20px;
+  font-size:20px;
+  animation:float 5s linear infinite;
+}
+
+@keyframes float{
+  0%{transform:translateY(0);opacity:0;}
+  50%{opacity:1;}
+  100%{transform:translateY(-700px);opacity:0;}
+}
+
+footer{
+  color:white;
+  margin:30px 0;
+  font-size:14px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- Romantic Music -->
-  <audio id="bgMusic" loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-  </audio>
+<!-- Music -->
+<audio id="music" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
+</audio>
 
-  <div class="container">
-    <h1>Happy Valentine's Day ❤️</h1>
-    <h2>My Dear Amrutha 💖</h2>
+<header>
+  <h1>Happy Valentine's Day 💖</h1>
+  <p>Adhi & Amrutha Forever 😘</p>
+</header>
 
-    <p>
-      From the moment you came into my life,<br>
-      everything became more beautiful ✨<br><br>
+<div class="love-box">
 
-      You are my smile, my peace, my happiness 💕<br>
-      I’m lucky to have you, always 💫
-    </p>
+  <h2>My Dear Amrutha 💕</h2>
 
-    <button onclick="showLove()">Click for My Heart 💌</button>
+  <p>
+    You are my smile 😄  
+    My peace 😌  
+    My headache 😜  
+    My happiness 💖  
 
-    <div class="message" id="loveMessage">
-      Amrutha ❤️<br><br>
-      I Love You More Than Words Can Say 💕<br>
-      Will You Be My Valentine Forever? 💍<br><br>
-      — Yours Always,<br>
-      Adhi 😘
-    </div>
+    <br><br>
+    Basically… You are MY EVERYTHING ❤️
+  </p>
 
-    <div class="footer">
-      Made with ❤️ by Adhi
-    </div>
+  <button onclick="showLove()">Click Me Baby 😘</button>
+
+  <div id="message">
+    I Love You So Much Amrutha 💕<br>
+    Will You Be My Valentine Forever? 💍<br><br>
+    — Your Crazy Lover, Adhi 😎❤️
   </div>
 
-  <script>
-    function showLove() {
-      const msg = document.getElementById("loveMessage");
-      const music = document.getElementById("bgMusic");
+</div>
 
-      msg.style.display = "block";
-      music.play();
+<div class="love-box">
 
-      // Create floating hearts
-      for (let i = 0; i < 40; i++) {
-        createHeart();
-      }
-    }
+  <h2>Our Cute Memories 📸</h2>
 
-    function createHeart() {
-      const heart = document.createElement("div");
-      heart.classList.add("heart");
-      heart.innerHTML = "❤️";
+  <div class="gallery">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+    <img src="photo4.jpg">
+    <img src="photo5.jpg">
+    <img src="photo6.jpg">
+  </div>
 
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.bottom = "-20px";
-      heart.style.fontSize = Math.random() * 25 + 15 + "px";
-      heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+</div>
 
-      document.body.appendChild(heart);
+<footer>
+  Made with ❤️ by Adhi for Amrutha
+</footer>
 
-      setTimeout(() => {
-        heart.remove();
-      }, 5000);
-    }
-  </script>
+<script>
+
+function showLove(){
+
+  document.getElementById("message").style.display="block";
+
+  document.getElementById("music").play();
+
+  // Hearts
+  for(let i=0;i<25;i++){
+    createHeart();
+  }
+}
+
+function createHeart(){
+
+  const heart=document.createElement("div");
+
+  heart.className="heart";
+  heart.innerHTML="❤️";
+
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.fontSize=(Math.random()*20+15)+"px";
+  heart.style.animationDuration=(Math.random()*3+3)+"s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(()=>{
+    heart.remove();
+  },5000);
+
+}
+
+</script>
 
 </body>
 </html>
